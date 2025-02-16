@@ -6,7 +6,7 @@ package list;
 
 public class List {
 
-        public static void listarEstudiantes(){
+        public static void listStudent(){
             Main.iterate = Main.students.entrySet().iterator();
 
             if(!Main.iterate.hasNext()){
@@ -15,9 +15,9 @@ public class List {
 
             Output.tableHeader();
             while(Main.iterate.hasNext()){
-                Map.Entry<Integer, Student> entrada = Main.iterate.next();
-                Integer id = entrada.getKey();
-                Student student = entrada.getValue();
+                Map.Entry<Integer, Student> in = Main.iterate.next();
+                Integer id = in.getKey();
+                Student student = in.getValue();
                 Output.tableBody(id,student.getFullName(),student.getFirstCurse(),student.getFirstScore(),student.getSecondCurse(),student.getSecondScore());
             }
             Output.tableEnds();

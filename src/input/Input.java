@@ -25,4 +25,7 @@ public class Input {
     public static int getScore(){
         return value.nextInt();
     }
+    public static int getStudentId(){
+        return value.nextInt();
+    }
 }

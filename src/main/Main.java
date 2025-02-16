@@ -1,6 +1,7 @@
 package main;
 
 import add.Add;
+import delete.Delete;
 import input.Input;
 import model.Student;
 import output.Output;
@@ -46,6 +47,8 @@ public class Main {
                     listUser();
                     break;
                 case USER_DELETE:
+                    listUser();
+                    Userdown();
                     break;
                 case MODIFY_SCORE:
                     break;
@@ -59,8 +62,12 @@ public class Main {
 
     }
 
+    private static void Userdown() {
+        Delete.deleteUser();
+    }
+
     private static void listUser() {
-        List.listarEstudiantes();
+        List.listStudent();
     }
 
     private static void addUser() {
