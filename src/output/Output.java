@@ -40,6 +40,9 @@ public class Output {
     public static void  studentEmpty(){
         System.out.println("No se ha encontrado estudiantes");
     }
+    public static void  studentSelect(){
+        System.out.println("Por favor, seleccione al estudiante: ");
+    }
 
     public static void tableHeader(){
         System.out.println("-----------------------------------------------------------------------------------------------------------------------");
