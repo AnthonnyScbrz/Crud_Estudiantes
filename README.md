@@ -16,7 +16,7 @@ Necesitarás tener instalado lo siguiente:
 Clona el repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/OscarRequena/Crud_Estudiantes.git
+git clone https://github.com/AnthonnyScbrz/Crud_Estudiantes.git
 ```
 
 ### Uso de la aplicación 📖
