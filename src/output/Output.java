@@ -31,7 +31,7 @@ public class Output {
     public static void curseRequest(){
         System.out.println("Ingrese la asignatura del estudiante: ");
     }
-    public static void ScoreRecuest(){
+    public static void ScoreRequest(){
         System.out.println("Ingrese la nota de la asignatura del estudiante: ");
     }
     public static void  confirmationMessage(){
@@ -45,6 +45,9 @@ public class Output {
     }
     public static void deleteConfirmation(){
         System.out.println("El estudiante ha sido correctamente eliminado <(>.<)/ ");
+    }
+    public static void modifyConfirmation(){
+        System.out.println("La nota ha sido modificado con éxito <(>.<)/ ");
     }
     public static void tableHeader(){
         System.out.println("-----------------------------------------------------------------------------------------------------------------------");
