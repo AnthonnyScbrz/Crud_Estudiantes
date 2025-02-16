@@ -5,8 +5,10 @@ import input.Input;
 import model.Student;
 import output.Output;
 import validator.Validator;
-
+import list.List;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -19,6 +21,7 @@ public class Main {
     final static int EXIT = 5;
     public final static int STUDENT_NUMBER = 2;
     public static HashMap<Integer, Student> students;
+    public static Iterator<Map.Entry<Integer, Student>> iterate;
     public static void main(String[] args) {
 
         students = new HashMap<>();
@@ -36,18 +39,28 @@ public class Main {
 
         if (optionMenu==EXIT){
         userWantToExit=true;
-        }
-        switch (optionMenu){
-            case USER_ADD:
-                addUser();
-                break;
-            case USER_DELETE: break;
-            case MODIFY_SCORE: break;
-            case USER_LIST: break;
+        }else {
+            switch (optionMenu) {
+                case USER_ADD:
+                    addUser();
+                    listUser();
+                    break;
+                case USER_DELETE:
+                    break;
+                case MODIFY_SCORE:
+                    break;
+                case USER_LIST:
+                    listUser();
+                    break;
+            }
         }
 
-        }while(userWantToExit);
+        }while(!userWantToExit);
 
+    }
+
+    private static void listUser() {
+        List.listarEstudiantes();
     }
 
     private static void addUser() {
