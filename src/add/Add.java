@@ -15,11 +15,11 @@ public class Add {
             String birthday= Input.getBirthday();
             Output.curseRequest();
             String firstCurse = Input.getCurse();
-            Output.ScoreRecuest();
+            Output.ScoreRequest();
             int firstScore = Input.getScore();
             Output.curseRequest();
             String secondCurse = Input.getCurse();
-            Output.ScoreRecuest();
+            Output.ScoreRequest();
             int secondScore = Input.getScore();
 
             main.Main.students.put(i+1, new Student(fullName,age,birthday,firstCurse,firstScore,secondCurse,secondScore));

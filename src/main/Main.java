@@ -4,6 +4,7 @@ import add.Add;
 import delete.Delete;
 import input.Input;
 import model.Student;
+import modify.Modify;
 import output.Output;
 import validator.Validator;
 import list.List;
@@ -51,6 +52,8 @@ public class Main {
                     Userdown();
                     break;
                 case MODIFY_SCORE:
+                    listUser();
+                    modifyUser();
                     break;
                 case USER_LIST:
                     listUser();
@@ -60,6 +63,11 @@ public class Main {
 
         }while(!userWantToExit);
 
+    }
+
+    private static void modifyUser() {
+        Modify.modifyScore();
+        Output.modifyConfirmation();
     }
 
     private static void Userdown() {
