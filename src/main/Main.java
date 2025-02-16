@@ -64,6 +64,7 @@ public class Main {
 
     private static void Userdown() {
         Delete.deleteUser();
+        Output.deleteConfirmation();
     }
 
     private static void listUser() {

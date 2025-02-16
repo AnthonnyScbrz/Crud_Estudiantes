@@ -43,7 +43,9 @@ public class Output {
     public static void  studentSelect(){
         System.out.println("Por favor, seleccione al estudiante: ");
     }
-
+    public static void deleteConfirmation(){
+        System.out.println("El estudiante ha sido correctamente eliminado <(>.<)/ ");
+    }
     public static void tableHeader(){
         System.out.println("-----------------------------------------------------------------------------------------------------------------------");
         System.out.printf("| %-2s | %-20s | %-20s | %-2s | %-20s | %-2s |\n","ID","Nombre completo","Primera Asignatura","(nota)","Segunda Asignatura","(nota)");
