@@ -19,6 +19,26 @@ public class Student {
         this.secondScore = secondScore;
     }
 
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getFirstCurse() {
+        return firstCurse;
+    }
+
+    public int getFirstScore() {
+        return firstScore;
+    }
+
+    public String getSecondCurse() {
+        return secondCurse;
+    }
+
+    public int getSecondScore() {
+        return secondScore;
+    }
+
     public void setFirstScore(int firstScore) {
         this.firstScore = firstScore;
     }
