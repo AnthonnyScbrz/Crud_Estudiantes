@@ -22,6 +22,9 @@ public class Output {
     public static void fullNameRequest(){
         System.out.println("Ingrese el nombre completo del estudiante: ");
     }
+    public static void lastNameRequest(){
+        System.out.println("Ingrese el apellido: ");
+    }
     public static void AgeRequest(){
         System.out.println("Ingrese la edad del estudiante: ");
     }
@@ -51,12 +54,12 @@ public class Output {
     }
     public static void tableHeader(){
         System.out.println("-----------------------------------------------------------------------------------------------------------------------");
-        System.out.printf("| %-2s | %-20s | %-20s | %-2s | %-20s | %-2s |\n","ID","Nombre completo","Primera Asignatura","(nota)","Segunda Asignatura","(nota)");
+        System.out.printf("| %-2s | %-20s | %-20s | %-2s | %-20s | %-2s |\n","ID","Nombre","Apellido","Primera Asignatura","(nota)","Segunda Asignatura","(nota)");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------");
 
     }
-    public static void tableBody(int id, String nombreCompleto, String Primera_Asignatura, int nota1, String Segunda_Asignatura, int nota2) {
-        System.out.printf("| %-2s | %-20s | %-20s | %-2s | %-20s | %-2s |\n", id, nombreCompleto, Primera_Asignatura, nota1, Segunda_Asignatura, nota2);
+    public static void tableBody(int id, String Nombre,String Apellido, String Primera_Asignatura, int nota1, String Segunda_Asignatura, int nota2) {
+        System.out.printf("| %-2s | %-20s | %-20s | %-20s | %-20s | %-2s |\n", id, Nombre,Apellido, Primera_Asignatura, nota1, Segunda_Asignatura, nota2);
     }
     public static void tableEnds() {
         System.out.println("------------------------------------------------------------------------------------------------------------------------");

@@ -22,11 +22,11 @@ public class Main {
     final static int USER_LIST = 4 ;
     final static int EXIT = 5;
     public final static int STUDENT_NUMBER = 2;
-    public static HashMap<Integer, Student> students;
+
     public static Iterator<Map.Entry<Integer, Student>> iterate;
     public static void main(String[] args) {
 
-        students = new HashMap<>();
+
         boolean userWantToExit= false;
 
         do {

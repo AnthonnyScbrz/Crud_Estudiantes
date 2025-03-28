@@ -12,6 +12,9 @@ public class Input {
         return value.next();
 
     }
+    public static String getLastName(){
+        return value.next();
+    }
     public static int getAge(){
         return value.nextInt();
 

@@ -1,7 +1,8 @@
 package model;
 
 public class Student {
-    private String fullName;
+    private String firstName;
+    private String lastName;
     private String firstCurse;
     private int age;
     private String birthday;
@@ -9,8 +10,9 @@ public class Student {
     private String secondCurse;
     protected int secondScore;
 
-    public Student(String fullName, int age, String birthday, String firstCurse, int firstScore, String secondCurse, int secondScore) {
-        this.fullName = fullName;
+    public Student(String firstName,String lastName ,int age, String birthday, String firstCurse, int firstScore, String secondCurse, int secondScore) {
+        this.firstName = firstName;
+        this.lastName=lastName;
         this.age = age;
         this.birthday = birthday;
         this.firstCurse = firstCurse;
@@ -19,8 +21,12 @@ public class Student {
         this.secondScore = secondScore;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName(){
+        return  lastName;
     }
 
     public String getFirstCurse() {

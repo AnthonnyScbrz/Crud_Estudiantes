@@ -18,7 +18,7 @@ public class List {
                 Map.Entry<Integer, Student> in = Main.iterate.next();
                 Integer id = in.getKey();
                 Student student = in.getValue();
-                Output.tableBody(id,student.getFullName(),student.getFirstCurse(),student.getFirstScore(),student.getSecondCurse(),student.getSecondScore());
+                Output.tableBody(id,student.getFirstName(),student.getLastName(),student.getFirstCurse(),student.getFirstScore(),student.getSecondCurse(),student.getSecondScore());
             }
             Output.tableEnds();
 
